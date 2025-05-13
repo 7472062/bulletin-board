@@ -1,0 +1,1 @@
+INSERT INTO users (username, password) VALUES ('admin', '$2a$12$v8Hrmv0e27BI2nRdA8MSbel9wonEPhr6bqs1SK5pS/PalYG3DEbXe');
