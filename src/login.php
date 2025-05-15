@@ -3,6 +3,7 @@ session_start();
 
 if (isset($_SESSION['userid'])) {
     echo "<script>alert('이미 로그인되어 있습니다.');history.back();</script>";
+    exit;
 }
 ?>
 <!DOCTYPE html>
