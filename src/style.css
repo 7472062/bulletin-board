@@ -58,6 +58,7 @@ header h1 a {
 .login input[type="submit"] {
     margin-bottom: 1rem;
     font-size: 2.5rem;
+    padding: 8px;
     border: 1px solid #000;
     border-radius: 10px;
 }
@@ -83,4 +84,18 @@ header h1 a {
     height: 2.5rem;
     border: 2px solid #000;
     border-radius: 10px;
+}
+
+.write-post label {
+    display: flex;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.write-post input[name="title"] {
+    flex-grow: 1;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 1.5rem;
+    border: 1px solid #000;
 }

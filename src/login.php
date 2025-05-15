@@ -17,8 +17,8 @@ if (isset($_SESSION['userid'])) {
     <div class="container">
         <h1 class="login-title"><a href="index.php">게시판</a></h1>
         <form action="login_proc.php" method="post" class="login">
-            <input type="text" name="username" placeholder=" ID" required>
-            <input type="password" name="password" placeholder=" PW" required>
+            <input type="text" name="username" placeholder="ID" required>
+            <input type="password" name="password" placeholder="PW" required>
             <?php
             if (isset($_GET['error'])) {
                 echo '<p style="color: red">아이디 혹은 비밀번호가 틀렸습니다.</p>';

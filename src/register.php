@@ -16,9 +16,9 @@ if (isset($_SESSION['userid'])) {
     <div class="container">
         <h1 class="login-title"><a href="index.php">게시판</a></h1>
         <form action="register_proc.php" method="post" class="login">
-            <input type="text" name="username" placeholder=" ID" required>
-            <input type="password" name="password" placeholder=" PW" required>
-            <input type="password" name="password_confirm" placeholder=" Re: PW" required>
+            <input type="text" name="username" placeholder="ID" required>
+            <input type="password" name="password" placeholder="PW" required>
+            <input type="password" name="password_confirm" placeholder="Re: PW" required>
             <input type="submit" value="회원가입">
         </form>
     </div>

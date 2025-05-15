@@ -27,7 +27,7 @@ require_once 'db_conn.php';
         </header>
         <main>
             <div class="post-button">
-                <a href="create_post.php">+</a>
+                <a href="write_post.php">+</a>
             </div>
         </main>
 
