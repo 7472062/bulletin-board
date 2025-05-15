@@ -1,4 +1,7 @@
-<?php session_start() ?>
+<?php 
+session_start();
+require_once 'db_conn.php';
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -22,7 +25,11 @@
                 </ul>
             </nav>
         </header>
-
+        <main>
+            <div class="post-button">
+                <a href="create_post.php">+</a>
+            </div>
+        </main>
 
 
     </div>
