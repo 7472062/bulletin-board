@@ -89,7 +89,11 @@ header h1 a {
 .write-post label {
     display: flex;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+}
+
+.write-post .title {
+    margin-top: 4rem;
 }
 
 .write-post input[name="title"] {
@@ -98,4 +102,27 @@ header h1 a {
     padding: 8px;
     font-size: 1.5rem;
     border: 1px solid #000;
+}
+
+.write-post textarea[name="content"] {
+    flex-grow: 1;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    height: 15rem;
+    resize: none;
+}
+
+.write-post .form-action {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.write-post input[type="submit"] {
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
 }

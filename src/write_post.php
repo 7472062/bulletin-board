@@ -26,7 +26,19 @@ if (!isset($_SESSION['userid'])) {
         </header>
         <main>
             <form action="write_post_proc.php" method="post" class="write-post">
-                <label>
+                <label class="title">
                     제목
                     <input type="text" name="title" required>
                 </label>
+                <label>
+                    내용
+                    <textarea name="content" required></textarea>
+                </label>    
+                <div class="form-action">
+                    <input type="submit" value="등록">
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
