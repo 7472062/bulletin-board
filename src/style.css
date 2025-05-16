@@ -159,3 +159,8 @@ header h1 a {
     width: 15%;
     text-align: center;
 }
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
