@@ -177,3 +177,44 @@ h2 {
 .post-content {
     font-size: 1.5rem;
 }
+
+.edit-post label {
+    display: flex;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.edit-post .title {
+    margin-top: 1rem;
+}
+
+.edit-post input[name="title"] {
+    flex-grow: 1;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 1.5rem;
+    border: 1px solid #000;
+}
+
+.edit-post textarea[name="content"] {
+    flex-grow: 1;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    height: 15rem;
+    resize: none;
+}
+
+.edit-post .form-action {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.edit-post input[type="submit"] {
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
