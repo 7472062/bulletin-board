@@ -51,14 +51,20 @@ if ($_SESSION['userid'] == $post_data['user_id']) {
         </header>
         <main>
             <?php
-            $edit_button_class = $is_author ? 'post-button"' : 'post-button" style="visibility: hidden;"';
+            $edit_button_class = ($is_author || $_SESSION['username'] == 'admin') ? 'post-button"' : 'post-button" style="visibility: hidden;"';
             echo '<div class="' . $edit_button_class . '>';
-            echo '<a href="edit_post.php">수정/삭제</a>';
+            echo '<a href="edit_post.php?id=' . $pid .'">수정/삭제</a>';
             echo '</div>';
             ?>
-            <div class="post-view-title">
-                <h2><?php echo $post_data['title']; ?></h2>
+            <h2><?php echo $post_data['title']; ?></h2>
+            <div class="post-info">
+                <?php
+                echo $post_data['username'];
+                echo "  |  ";
+                echo date("Y/m/d H:i:s", strtotime($post_data['created_at']));
+                ?>
             </div>
+            <div class="post-content"><?php echo $post_data['content']; ?></div>
         </main>
     </div>
 </body>
