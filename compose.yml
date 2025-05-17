@@ -5,6 +5,8 @@ services:
       - "8080:80"
     volumes:
       - ./src:/var/www/html
+    environment:
+      - TZ=Asia/Seoul
     networks:
       - default
   db:
@@ -14,6 +16,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: user
       MYSQL_DATABASE: bulletin_board_db
+      TZ: Asia/Seoul
     ports:
       - "3306:3306"
     volumes:
