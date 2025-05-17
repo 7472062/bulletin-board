@@ -44,16 +44,18 @@ if ($_SESSION['userid'] != $post_data['user_id'] && $_SESSION['username'] != 'ad
         <main>
             <?php echo '<div class="post-button"><a href="view_post.php?id=' . $pid . '">취소</a></div>'; ?>
             <form action="edit_post_proc.php" method="post" class="edit-post">
+                <input type="hidden" name="pid" value="<?php echo $pid ?>">
                 <label class="title">
                     제목
-                    <input type="text" name="title" required>
+                    <input type="text" name="title" value="<?php echo $post_data['title'] ?>"required>
                 </label>
                 <label>
                     내용
-                    <textarea name="content" required></textarea>
+                    <textarea name="content" required><?php echo $post_data['content'] ?></textarea>
                 </label>    
                 <div class="form-action">
-                    <input type="submit" value="등록">
+                    <input type="submit" name="action" value="수정">
+                    <input type="submit" name="action" value="삭제">
                 </div>
             </form>
         </main>
